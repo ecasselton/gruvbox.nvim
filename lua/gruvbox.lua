@@ -371,6 +371,7 @@ local function get_groups()
     SpellLocal = { link = "GruvboxAquaUnderline" },
     SpellRare = { link = "GruvboxPurpleUnderline" },
     Whitespace = { fg = colors.bg2 },
+    Delimiter = { link = "GruvboxOrange" },
     DiagnosticError = { link = "GruvboxRed" },
     DiagnosticSignError = { link = "GruvboxRedSign" },
     DiagnosticUnderlineError = { link = "GruvboxRedUnderline" },
@@ -1016,7 +1017,7 @@ local function get_groups()
     ["@markup.strong"] = { bold = config.text_style.emphasis.bold },
     ["@markup.emphasis"] = { italic = config.text_style.emphasis.italic},
     ["@markup.underline"] = { underline = config.underline },
-    ["@markup.strike"] = { strikethrough = config.strikethrough },
+    ["@markup.strikethrough"] = { strikethrough = config.strikethrough },
     ["@markup.heading"] = { link = "Title" },
     ["@markup.raw"] = { link = "String" },
     ["@markup.math"] = { link = "Special" },
@@ -1081,6 +1082,7 @@ local function get_groups()
     ["@lsp.type.type"] = { link = "@type" },
     ["@lsp.type.typeParameter"] = { link = "@type.definition" },
     ["@lsp.type.variable"] = { link = "@variable" },
+    EndOfBuffer = { link = "GruvboxBg0" },
   }
 
   for group, hl in pairs(config.overrides) do
